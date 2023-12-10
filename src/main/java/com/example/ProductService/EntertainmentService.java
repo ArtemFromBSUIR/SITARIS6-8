@@ -1,14 +1,19 @@
 package com.example.ProductService;
 
-import java.util.ArrayList;
-import java.util.List;
-import javax.xml.parsers.DocumentBuilderFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+import javax.xml.parsers.DocumentBuilderFactory;
+import java.util.ArrayList;
+import java.util.List;
+
 public class EntertainmentService {
     private List<Entertainment> entertainments;
+
+    public List<Entertainment> getAllEntertainments() {
+        return entertainments;
+    }
 
     public EntertainmentService(String filePath) {
         loadEntertainments(filePath);
@@ -39,9 +44,6 @@ public class EntertainmentService {
         }
     }
 
-    public List<Entertainment> getAllEntertainments() {
-        return entertainments;
-    }
 
     public double calculateTotalCost() {
         double totalCost = 0;

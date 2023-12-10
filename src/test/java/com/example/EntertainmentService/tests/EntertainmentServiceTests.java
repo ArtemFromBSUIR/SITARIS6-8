@@ -3,7 +3,7 @@ package com.example.EntertainmentService.tests;
 import com.example.ProductService.Entertainment;
 import com.example.ProductService.EntertainmentService;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
+
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -16,7 +16,6 @@ public class EntertainmentServiceTests {
 
     @BeforeEach
     public void setUp() {
-
         String filePath = "src/main/webapp/WEB-INF/entertainments.xml";
         entertainmentService = new EntertainmentService(filePath);
     }
@@ -33,6 +32,7 @@ public class EntertainmentServiceTests {
         double expectedTotalCost = 2950.0;
         double actualTotalCost = entertainmentService.calculateTotalCost();
         assertEquals(expectedTotalCost, actualTotalCost, 0.01);
+
     }
 
 }

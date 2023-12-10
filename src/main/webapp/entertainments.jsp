@@ -1,13 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="javax.xml.parsers.DocumentBuilderFactory" %>
-<%@ page import="org.w3c.dom.Document" %>
-<%@ page import="org.w3c.dom.Element" %>
-<%@ page import="org.w3c.dom.Node" %>
-<%@ page import="org.w3c.dom.NodeList" %>
 <%@ page import="com.example.ProductService.Entertainment" %>
-<%@ page import="javax.xml.parsers.DocumentBuilder" %>
 <%@ page import="com.example.ProductService.EntertainmentService" %>
 
 <%
